@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.dijkst.servicebundle</string>
+	<key>TargetOnly</key>
+	<true/>
+	<key>Ancestors</key>
+	<array>
+		<string>com.dijkst.packageBase</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>仅用于创建不带 binary 的 Framework，例如 Service。</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>ProductType</key>
+			<string>com.apple.product-type.bundle</string>
+			<key>Name</key>
+			<string>___VARIABLE_specName___</string>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.bundleTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>___VARIABLE_frameworkName___</string>
+				<key>INFOPLIST_FILE</key>
+				<string></string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Bundles</string>
+				<key>UNLOCALIZED_RESOURCES_FOLDER_PATH</key>
+				<string>$(FULL_PRODUCT_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>framework</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>frameworkName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Framework Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Description</key>
+			<string>Your framework&apos;s name</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>specName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Subspec Name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Default</key>
+			<string>Service</string>
+			<key>Description</key>
+			<string>The subspec name in podspec.</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+</dict>
+</plist>

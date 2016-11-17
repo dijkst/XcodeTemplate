@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.dijkst.packageBase</string>
+	<key>Concrete</key>
+	<false/>
+	<key>Description</key>
+	<string>包基础描述</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.frameworkBase</string>
+		<string>com.apple.dt.unit.languageChoice</string>
+		<string>com.apple.dt.unit.iosBase</string>
+	</array>
+	<key>SortOrder</key>
+	<integer>2</integer>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>TARGETED_DEVICE_FAMILY</key>
+			<string>1,2</string>
+			<key>HEADER_SEARCH_PATHS</key>
+			<string>$(inherited)</string>
+			<key>FRAMEWORK_SEARCH_PATHS</key>
+			<string>$(inherited)</string>
+			<key>LIBRARY_SEARCH_PATHS</key>
+			<string>$(inherited)</string>
+			<key>OTHER_CFLAGS</key>
+			<string>$(inherited)</string>
+			<key>OTHER_LDFLAGS</key>
+			<string>$(inherited)</string>
+		</dict>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaTouchLibraryOrFrameworkTarget</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>___PACKAGENAME___/Supporting Files/PrefixHeader.pch</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>INFOPLIST_PATH</key>
+				<string>$(FULL_PRODUCT_NAME)/Info.plist</string>
+				<key>UNLOCALIZED_RESOURCES_FOLDER_PATH</key>
+				<string>$(FULL_PRODUCT_NAME)/Resources</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string></string>
+				<key>CODE_SIGNING_REQUIRED</key>
+				<string>NO</string>
+				<key>CODE_SIGNING_ALLOWED</key>
+				<string>NO</string>
+				<key>EXPANDED_CODE_SIGN_IDENTITY</key>
+				<string></string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+			</dict>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>Headers</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>Supporting Files/PrefixHeader.pch</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Supporting Files/PrefixHeader.pch</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Supporting Files/___FILEBASENAME___.pch</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+	</dict>
+</dict>
+</plist>
