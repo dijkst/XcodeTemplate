@@ -20,6 +20,97 @@
 	<true/>
 	<key>SortOrder</key>
 	<integer>-10</integer>
+	<key>Project</key>
+	<dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>GCC_C_LANGUAGE_STANDARD</key>
+			<string>gnu99</string>
+			<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+			<string>gnu++0x</string>
+			<key>CLANG_CXX_LIBRARY</key>
+			<string>libc++</string>
+			<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+			<string>YES_ERROR</string>
+			<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+			<string>YES_AGGRESSIVE</string>
+			<key>CLANG_WARN_UNREACHABLE_CODE</key>
+			<string>YES</string>
+			<key>GCC_WARN_UNUSED_VARIABLE</key>
+			<string>YES</string>
+			<key>GCC_WARN_UNUSED_FUNCTION</key>
+			<string>YES</string>
+			<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+			<string>YES</string>
+			<key>CLANG_WARN_EMPTY_BODY</key>
+			<string>YES</string>
+			<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_INT_CONVERSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_BOOL_CONVERSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+			<string>YES</string>
+			<key>CLANG_WARN_ENUM_CONVERSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+			<string>YES_ERROR</string>
+			<key>CLANG_ANALYZER_NONNULL</key>
+			<string>YES</string>
+			<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+			<string>YES</string>
+			<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+			<string>YES_ERROR</string>
+			<key>CLANG_WARN_INFINITE_RECURSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+			<string>YES</string>
+			<key>CLANG_ENABLE_OBJC_ARC</key>
+			<string>YES</string>
+			<key>CLANG_ENABLE_MODULES</key>
+			<string>YES</string>
+			<key>GCC_NO_COMMON_BLOCKS</key>
+			<string>YES</string>
+			<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+			<string>YES</string>
+			<key>ALWAYS_SEARCH_USER_PATHS</key>
+			<string>NO</string>
+			<key>COPY_PHASE_STRIP</key>
+			<string>NO</string>
+		</dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Debug</key>
+			<dict>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<string>DEBUG=1 $(inherited)</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+			</dict>
+			<key>Release</key>
+			<dict>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+			</dict>
+		</dict>
+	</dict>
 	<key>Options</key>
 	<array>
 		<dict>
@@ -131,17 +222,6 @@
 								<key>Identifier</key>
 								<string>com.dijkst.packageBase</string>
 								<key>Name</key>
-								<string>___VARIABLE_subspecName___Pods</string>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>Components</key>
-						<array>
-							<dict>
-								<key>Identifier</key>
-								<string>com.dijkst.packageBase</string>
-								<key>Name</key>
 								<string>___VARIABLE_subspecName___</string>
 							</dict>
 						</array>
@@ -175,6 +255,17 @@
 								<string>com.dijkst.cocoaTouchApplicationBase</string>
 								<key>Name</key>
 								<string>___VARIABLE_subspecName___Demo</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>Components</key>
+						<array>
+							<dict>
+								<key>Identifier</key>
+								<string>com.dijkst.cocoaPods</string>
+								<key>Name</key>
+								<string>Pods</string>
 							</dict>
 						</array>
 					</dict>
