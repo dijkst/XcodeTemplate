@@ -2,9 +2,9 @@
 platform :ios, '8.0'
 
 target '___VARIABLE_productName___' do
-	podspec
     # pod 'FFPublicDefineKit', :path=>'../FFCommonService/FFPublicDefineKit'
 
+	podspec
     target '___VARIABLE_productName___Demo' do
     end
 
