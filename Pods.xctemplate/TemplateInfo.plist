@@ -18,13 +18,26 @@
 	<integer>-100</integer>
 	<key>Definitions</key>
 	<dict>
-		<key>../Podfile</key>
+		<key>../Podfile:main</key>
 		<dict>
-			<key>Path</key>
-			<string>Podfile</string>
+			<key>Beginning</key>
+			<string>
+platform :ios, &apos;8.0&apos;
+
+target &apos;___VARIABLE_productName___&apos; do
+    # pod &apos;FFPublicDefineKit&apos;, :path=&gt;&apos;../FFCommonService/FFPublicDefineKit&apos;
+
+    podspec</string>
+			<key>End</key>
+			<string>end</string>
 			<key>TargetIndices</key>
 			<array/>
 		</dict>
+		<key>../Podfile:main:Demo</key>
+		<string>
+    target &apos;___VARIABLE_productName___Demo&apos; do
+    end
+</string>
 		<key>../PodEnv</key>
 		<dict>
 			<key>Path</key>
@@ -43,8 +56,35 @@
 	<key>Nodes</key>
 	<array>
 		<string>../___VARIABLE_productName___.podspec</string>
-		<string>../Podfile</string>
+		<string>../Podfile:main</string>
 		<string>../PodEnv</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>hasDemoApplication</string>
+			<key>Name</key>
+			<string>Include Demo Application</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>SortOrder</key>
+			<integer>100</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>../Podfile:main:Demo</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>
