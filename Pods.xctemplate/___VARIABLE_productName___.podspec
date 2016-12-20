@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, '8.0'
   s.source = { :git => 'ssh://gerrit/___VARIABLE_productName___', :tag=>'1.0' }
   s.prefix_header_file = '___VARIABLE_productName___/Supporting Files/PrefixHeader.pch' 
-  s.pod_target_xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "__TARGET_NAME__=\"$(PRODUCT_NAME)\"" }
+  s.pod_target_xcconfig = { "GCC_PREPROCESSOR_DEFINITIONS" => "__TARGET_NAME__=${PRODUCT_NAME:rfc1034identifier}" }
   s.source_files = '___VARIABLE_productName___/**/*.{h,m,c,mm}'
   s.resources = ["___VARIABLE_productName___/**/*.{png,jpg,xib,bundle}"]
   
